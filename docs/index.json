@@ -1,5 +1,64 @@
 {
   "data": {
+    "1c1zQIVjJbm4AXejl0bjp9YCe5r-SAFF-Kqom5IeRXl4": {
+      "type": "application/vnd.google-apps.spreadsheet",
+      "name": "Current-Affairs-2019",
+      "modified": "2020-11-23T14:25:27.745Z",
+      "sheets": [
+        {
+          "name": "Summary",
+          "id": 0
+        },
+        {
+          "name": "01",
+          "id": 194492473
+        },
+        {
+          "name": "02",
+          "id": 290600388
+        },
+        {
+          "name": "03",
+          "id": 7421155
+        },
+        {
+          "name": "04",
+          "id": 436145075
+        },
+        {
+          "name": "05",
+          "id": 87726956
+        },
+        {
+          "name": "06",
+          "id": 2088417076
+        },
+        {
+          "name": "07",
+          "id": 1926712538
+        },
+        {
+          "name": "08",
+          "id": 149208682
+        },
+        {
+          "name": "09",
+          "id": 280037251
+        },
+        {
+          "name": "10",
+          "id": 1955415902
+        },
+        {
+          "name": "11",
+          "id": 1803221042
+        },
+        {
+          "name": "12",
+          "id": 1879085826
+        }
+      ]
+    },
     "17iq4rF-SD38CGdlGUo2N_UgdXh_2SYotEAaoBUrSWvk": {
       "type": "application/vnd.google-apps.spreadsheet",
       "name": "General-Knowledge",
@@ -103,5 +162,5 @@
       ]
     }
   },
-  "ts": "2020-11-23T14:08:51.508Z"
+  "ts": "2020-11-23T14:40:30.492Z"
 }
