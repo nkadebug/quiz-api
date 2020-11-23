@@ -9,12 +9,14 @@ exports.getIndexJson = function () {
     .get(index_url)
     .then(function ({ data }) {
       console.log(data);
-      fs.writeFile("docs/index.json", JSON.stringify(data, null, 2), function (
-        err
-      ) {
-        if (err) throw err;
-        console.log(err);
-      });
+      fs.writeFile(
+        "docs/index.json",
+        JSON.stringify({ data, ts: new Date().toJSON() }, null, 2),
+        function (err) {
+          if (err) throw err;
+          console.log(err);
+        }
+      );
     })
     .catch(function (error) {
       console.log(error);
