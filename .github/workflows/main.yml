@@ -1,8 +1,8 @@
 name: Sheet to Json
 
 on:
-  # schedule:
-  #   - cron: "*/5 * * * *"
+  schedule:
+    - cron: "*/30 * * * *"
   push:
     branches:
       - master
@@ -22,5 +22,14 @@ jobs:
           git config --global user.name 'nkadebug'
           git config --global user.email 'nkadebug@users.noreply.github.com'
           git add .
-          git commit -am "Automated Sheet to JSON"
-          git push
+          set +e  # Grep succeeds with nonzero exit codes to show results.
+          if git status | grep 'new file\|modified'
+          then
+            set -e
+            git commit -am "Sheet to JSON - updated on - $(date)"
+            git push
+            echo "Pushed new files"
+          else
+            set -e
+            echo "No changes since last run"
+          fi
