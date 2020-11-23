@@ -1,8 +1,8 @@
 name: Sheet to Json
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
+  # schedule:
+  #   - cron: "*/5 * * * *"
   push:
     branches:
       - master
@@ -21,5 +21,6 @@ jobs:
         run: |
           git config --global user.name 'nkadebug'
           git config --global user.email 'nkadebug@users.noreply.github.com'
+          git add .
           git commit -am "Automated Sheet to JSON"
           git push
