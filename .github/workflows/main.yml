@@ -3,6 +3,9 @@ name: Sheet to Json
 on:
   schedule:
     - cron: "*/5 * * * *"
+  push:
+    branches:
+      - master
 
 jobs:
   build:
